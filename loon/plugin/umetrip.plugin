@@ -6,9 +6,9 @@
 # - May be slightly aggressive; if a feature breaks, share the hit URL from logs and I'll relax it.
 #!name= 航旅纵横-去广告-2025-11-STRICT
 #!desc= 最后更新时间 2025-11-01。屏蔽航旅纵横 App 内的开屏广告及其他广告资源，支持官方 OSS 及 Ali CDN 镜像（ossgw.alicdn.com）和 mPaaS（Aliyun OSS）路径。规则较为严格，如发现功能异常，请提供日志中的命中 URL 以便调整规则。
-#!openUrl= https://github.com/DUANKD/ios_rule_config
+#!openUrl= https://github.com/GooGooDe/ios_rule_config
 #!author= blackmatrix7
-#!homepage= https://github.com/DUANKD/ios_rule_config
+#!homepage= https://github.com/GooGooDe/ios_rule_config
 #!icon= https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/umetrip.png
 #!reject= 740
 #!mitm= 698
