@@ -23,10 +23,10 @@ hostname = oss.umetrip.com, api.umetrip.com, ossgw.alicdn.com, *.aliyuncs.com
 
 [Rewrite]
 # ---- Primary (official OSS) ----
-# ^https?:\/\/oss\.umetrip\.com\/fs\/advert\/polite.* reject-dict
-# ^https?:\/\/oss\.umetrip\.com\/fs\/advert\/.* reject-dict
+^https?:\/\/oss\.umetrip\.com\/fs\/advert\/polite.* reject-dict
+^https?:\/\/oss\.umetrip\.com\/fs\/advert\/.* reject-dict
 # 拦截 advert/ 下所有路径，但排除掉 polite/ 开头的路径
-^https?:\/\/oss\.umetrip\.com\/fs\/advert\/(?!polite\/).* reject-dict
+# ^https?:\/\/oss\.umetrip\.com\/fs\/advert\/(?!polite\/).* reject-dict
 
 # ---- Ali CDN mirror of the same bucket ----
 ^https?:\/\/ossgw\.alicdn\.com\/.*\/fs\/advert\/polite.* reject-dict
