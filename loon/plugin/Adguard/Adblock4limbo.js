@@ -63,10 +63,15 @@ const privacyGate_script = `
 `
 
 
-const JS_URL = "https://limbopro.com/Adguard/Adblock4limbo.user.js";
-const fc_JS_URL = "https://limbopro.com/Adguard/Adblock4limbo.function.js";
-const fd_JS_URL = "https://limbopro.com/Adguard/elementBlocker.user.js";
-const agent_JS_URL = "https://limbopro.com/Adguard/isAgent.js"; // 无实意
+// const JS_URL = "https://limbopro.com/Adguard/Adblock4limbo.user.js";
+// const fc_JS_URL = "https://limbopro.com/Adguard/Adblock4limbo.function.js";
+// const fd_JS_URL = "https://limbopro.com/Adguard/elementBlocker.user.js";
+// const agent_JS_URL = "https://limbopro.com/Adguard/isAgent.js"; // 无实意
+
+const JS_URL = "https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/Adguard/Adblock4limbo.user.js";
+const fc_JS_URL = "https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/Adguard/Adblock4limbo.function.js";
+const fd_JS_URL = "https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/Adguard/elementBlocker.user.js";
+const agent_JS_URL = "https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/Adguard/isAgent.js"; // 无实意
 
 // 基础注入内容
 // const TITLE_INJECTION_BASE = `<link rel="stylesheet" href="${CSS_URL}" type="text/css" />
