@@ -159,7 +159,8 @@ function main() {
         // 1. 必须是 text/html 才处理
         const contentType = headers['Content-Type'] || headers['content-type'] || '';
         if (!contentType.includes('text/html')) {
-            $done({});
+            // $done({});
+            $done({ body: body });
             return;
         }
 
