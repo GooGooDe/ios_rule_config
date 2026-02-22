@@ -1,0 +1,206 @@
+#!name=毒奶特供(2026年02月01日更新) 独立开关版
+#!desc=1.新增页面右下角导航；2.支持为每个特定网站独立控制去广告脚本的开启与关闭。
+#!author=limbopro
+#!homepage=https://limbopro.com/archives/12904.html
+#!icon=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Icon/Adblock4limbo.png
+
+[Argument]
+# =================独立开关设置=================
+SW_01 = switch, true, false, tag=知道搜索广告(zhidao.baidu.com)
+SW_02 = switch, true, false, tag=搜索首页广告(www.baidu.com)
+SW_03 = switch, true, false, tag=搜索结果广告(www.baidu.com)
+SW_04 = switch, true, false, tag=内容农场(www.bing.com)
+SW_05 = switch, true, false, tag=内容农场(www.google.com|com.hk)
+SW_06 = switch, true, false, tag=禁漫天堂(18comic.org|vip)
+SW_07 = switch, true, false, tag=华人直播(play.huaren.live)
+SW_08 = switch, true, false, tag=华人直播播放源(playa.huaren.live)
+SW_09 = switch, true, false, tag=华人直播(huaren.live)
+SW_10 = switch, true, false, tag=肉漫(rouman5)
+SW_11 = switch, true, false, tag=肉视频(rou.video)
+SW_12 = switch, true, false, tag=紳士漫畫(www.wnacg.com)
+SW_13 = switch, true, false, tag=嗶咔picacg免費網頁版(manhuapica.com)
+SW_14 = switch, true, false, tag=CN影视(cnys.tv)
+SW_15 = switch, true, false, tag=小宝影视(xiaobaotv.net)
+SW_16 = switch, true, false, tag=iyf(www.iyf.tv)
+SW_17 = switch, true, false, tag=泥巴影视(Nivod4.tv)
+SW_18 = switch, true, false, tag=剧迷网(gimy.app|ai)
+SW_19 = switch, true, false, tag=低端影视(ddrk.me|ddys.pro)
+SW_20 = switch, true, false, tag=哔嘀影视播放页(www.52bdys.com)
+SW_21 = switch, true, false, tag=哔嘀影视展示页(www.52bdys.com)
+SW_22 = switch, true, false, tag=欧乐影视(www.olevod.tv)
+SW_23 = switch, true, false, tag=茶杯狐(cupfoxapp.tv)
+SW_24 = switch, true, false, tag=dmmiku(www.dmmiku.com)
+SW_25 = switch, true, false, tag=bfdm(bf.bfdm.xyz)
+SW_26 = switch, true, false, tag=独播库(www.duboku.tv)
+SW_27 = switch, true, false, tag=韩剧TV(www.tvn.cc)
+SW_28 = switch, true, false, tag=555电影网(555dy.com)
+SW_29 = switch, true, false, tag=梨播(libvio.top|pro)
+SW_30 = switch, true, false, tag=天天视频(www.ttsp.tv)
+SW_31 = switch, true, false, tag=工口漫画(hitomi.la)
+SW_32 = switch, true, false, tag=NT动漫(www.ntdm9.com)
+SW_33 = switch, true, false, tag=稷下書院(www.novel543.com)
+SW_34 = switch, true, false, tag=第一版主(m.diyibanzhu.me)
+SW_35 = switch, true, false, tag=爱丽丝书屋(www.alicesw.com)
+SW_36 = switch, true, false, tag=hltv(www.hltv.org)
+SW_37 = switch, true, false, tag=DMM(www.dmm.co.jp)
+SW_38 = switch, true, false, tag=Javbus(www.javbus.com)
+SW_39 = switch, true, false, tag=JavDB(www.javDB.com)
+SW_40 = switch, true, false, tag=jav.land(jav.land)
+SW_41 = switch, true, false, tag=Javlibrary(www.Javlibrary.com)
+SW_42 = switch, true, false, tag=Pornhub(cn.pornhub.com)
+SW_43 = switch, true, false, tag=t66y艹榴(t66y.com)
+SW_44 = switch, true, false, tag=小黄书(xchina.co)
+SW_45 = switch, true, false, tag=Jable(en|jable.tv)
+SW_46 = switch, true, false, tag=Missav(missav.com)
+SW_47 = switch, true, false, tag=bi-girl(bi-girl.net)
+SW_48 = switch, true, false, tag=op.gg(op.gg)
+SW_49 = switch, true, false, tag=Javday(javday.tv|javday.app)
+SW_50 = switch, true, false, tag=Xvideos(www.xvideos.com)
+SW_51 = switch, true, false, tag=njav(njav.com)
+SW_52 = switch, true, false, tag=Netflav(netflav|netflav5|.com)
+SW_53 = switch, true, false, tag=turbovidhls(turbovidhls.com)
+SW_54 = switch, true, false, tag=PlayerAds
+SW_55 = switch, true, false, tag=t1229.btc760.com(t1229.btc760.com)
+SW_56 = switch, true, false, tag=mdsp(dnt92ffcqr0xu|d1skbu98kuldnf.cloudfront.net)
+SW_57 = switch, true, false, tag=91porny(91porny.com)
+SW_58 = switch, true, false, tag=91porna(91porna.com)
+SW_59 = switch, true, false, tag=91porn(www.91porn.com)
+SW_60 = switch, true, false, tag=91short(cn1.91short.com)
+SW_61 = switch, true, false, tag=Avple(avple.tv)
+SW_62 = switch, true, false, tag=4hu(4hu.tv)
+SW_63 = switch, true, false, tag=Supjav(supjav.com)
+SW_64 = switch, true, false, tag=tz659(www.tz659.com)
+SW_65 = switch, true, false, tag=anime1(anime1.me)
+SW_66 = switch, true, false, tag=hanime1(hanime1.me)
+SW_67 = switch, true, false, tag=yhdmp(m.yhdmp.com)
+SW_68 = switch, true, false, tag=Javmost(javmost.xyz)
+SW_69 = switch, true, false, tag=AVfactory
+
+[Rewrite]
+# Rejects
+^https?:\/\/www\.novel543\.com\/log\/ad\.html reject
+^https?:\/\/stat\.gn01\.top\/js\/script\.js reject
+^https?:\/\/adc\.tamedia\.com\.tw\/rmadp/static/js/gm-sdk8-mobile\.js reject
+^https?:\/\/.*?.gliacloud.com.*?www\.novel543\..* reject
+^https?:\/\/cdn\.holmesmind\.com\/js\/init\.js reject
+^https://m.diyibanzhu.me/js/js4.js reject
+\/api\/video\/getadsdatalist\? reject
+js\.wpadmngr\.com\/static\/adManager\.js reject
+^https?:\/\/[-a-z]{6,}\.com?\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$ reject
+hltv-tracking\.js reject
+https?:\/\/[0-9a-zA-Z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}=\d{4,8} reject
+^https?:\/\/assert\.avple\.tv\/file\/avple-images\/ad\.js reject
+^https:\/\/(cn|www)\.pornhub\.com\/_xa\/ads.* reject
+jbnnr_huath_2.js reject
+jbnnr_mmdaohang_2.js reject
+jbnnr_yueyupp_3.js reject
+bnnr_gojapan reject
+^https?:\/\/.*\/js\/static\/header\/sda\/ppsuma*.js reject
+^https:\/\/suzihaza\.com\/asset\/jquery\/slim-3\.2\.min\.js.* reject
+filemoon\.sx.*/js/baf.js reject
+^https:\/\/mmfl02\.com\/assets\/jquery\/p2adult\.js.* reject
+^https:\/\/mmfl02\.com\/.*?\&ads reject
+https://api.nivodz.com/commercial/incr/WEB/3.2\?_ts=1697870082522 reject
+https://api.nivodz.com/commercial/incr/WEB/3.2\?_ts=1697870082520 reject
+https://a.realsrv.com/ad-provider.js reject
+https://help.fanza.cc/* reject
+https://creative.xlivrdr.com/widgets/Spot/lib.js reject
+https://static.adxadserv.com/js/adb.js reject
+https://creative.xlivrdr.com/widgets/v4/Universal\?tag reject
+https://goesdeedinsensitive.com/bd/0d/e2/*.js reject
+https://streamwish.com/.*ads.js reject
+/assets/jquery/main100.js\? reject
+https://rouman5.com/_next/static/chunks/pages/home-8ff6090a1203a289.js reject
+https://mc.yandex.ru/metrika/tag.js reject
+https://cdn.tsyndicate.com/sdk/v1/master.spot.js reject
+https://poweredby.jads.co/js/jads.js reject
+https://a.magsrv.com/ad-provider.js reject
+https://ra7.xyz/z/.*/code.js reject
+https://(www|zhuanlan)\.zhihu\.com/api/v4/questions/\d+/related-readings reject
+https://(www|zhuanlan)\.zhihu\.com/api/v4/answers/\d+/related-readings reject
+https://(www|zhuanlan)\.zhihu\.com/commercial_api/banners_v3/(mobile_banner|mobile_question) reject
+https://(www|zhuanlan)\.zhihu\.com/api/articles/\d+/recommendation reject
+https://creative.live.missav.com/widgets/Spot/lib.js reject
+
+# Redirects
+^https?:\/\/www\.pornhub\.com$ 307 https://cn.pornhub.com
+^https?:\/\/www\.javlibrary\.com\/img\/.*\.gif 307 https://www.javlibrary.com/favicon.ico
+(https://www.javlibrary.com/cn/videoreviews.php\?v=)(.*?)(&mode=.*) 307 https://www.javlibrary.com/cn/?v=$2
+
+# Header Rewrite
+^https?:\/\/(www\.xvideos)(\.)(\w{0,3})(?!(.*(api|cdn-cgi|verify|auth|captch|\.))).* header-replace Content-Security-Policy *
+
+[Script]
+# =================单独绑定的脚本规则=================
+http-response ^https?:\/\/(zhidao)\.baidu\.com\/(question|index|\?fr|\?word) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=知道搜索广告(zhidao.baidu.com), argument={SW_01}
+http-response https?:\/\/(www|m)\.baidu\.com(/$|\/\?ref.*) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=搜索首页广告(www.baidu.com), argument={SW_02}
+http-response https?:\/\/(www|m)\.baidu\.com\/(from=|s\?) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=搜索结果广告(www.baidu.com), argument={SW_03}
+http-response ^https?:\/\/((www|cn)\.bing)(\.\w{2,4}){1,2}\/(search\?.*|\?sa=|\?FORM)(?!.*?(apps=)) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=内容农场(www.bing.com), argument={SW_04}
+http-response ^https?:\/\/(www\.google)(\.\w{2,4}){1,2}\/(search\?|\?sa=|\?FORM)(?!.*?(apps=)) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=内容农场(www.google.com|com.hk), argument={SW_05}
+http-response ^https?:\/\/18comic\.(vip|org)\/(?!(.*(onclick|cdn-cgi|verify|auth|captch|\.))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=禁漫天堂(18comic.org|vip), argument={SW_06}
+http-response ^https?:\/\/(play\.huaren\.live)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=华人直播(play.huaren.live), argument={SW_07}
+http-response ^https?:\/\/(playa\.huaren\.live)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=华人直播播放源(playa.huaren.live), argument={SW_08}
+http-response ^https?:\/\/(huaren\.live)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=华人直播(huaren.live), argument={SW_09}
+http-response ^https?:\/\/(rouman5\.com)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=肉漫(rouman5), argument={SW_10}
+http-response ^https?:\/\/(rou\.video)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=肉视频(rou.video), argument={SW_11}
+http-response ^https?:\/\/www\.wnacg\.com\/(?!(.*(onclick|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=紳士漫畫(www.wnacg.com), argument={SW_12}
+http-response ^https?:\/\/manhuapica\.com\/(?!(.*(onclick|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=嗶咔picacg免費網頁版(manhuapica.com), argument={SW_13}
+http-response ^https?:\/\/((cnys)\.(tv|com))\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/cnys.js, requires-body=true, tag=CN影视(cnys.tv), argument={SW_14}
+http-response ^https?:\/\/((xiaobaotv|xiaoxintv)\.(net|com))\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=小宝影视(xiaobaotv.net), argument={SW_15}
+http-response ^https?:\/\/(((www|m)\.iyf)\.(tv|com))\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=iyf(www.iyf.tv), argument={SW_16}
+http-response ^https?:\/\/(www|m)\.(nivod\d(\.tv|\.com))\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=泥巴影视(Nivod4.tv), argument={SW_17}
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(gimy)(\.)\w{0,3})\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=剧迷网(gimy.app|ai), argument={SW_18}
+http-response ^https?:\/\/(ddys|ddrk|ddys2)\.\w{0,3}\/(?!(.*(cdn-cgi|verify|auth|captch|getvddr|\=json|\.))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=低端影视(ddrk.me|ddys.pro), argument={SW_19}
+http-response ^https?:\/\/www\.52bdys\.com\/play\/.*?\.htm.* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=哔嘀影视播放页(www.52bdys.com), argument={SW_20}
+http-response ^https?:\/\/www\.52bdys\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=哔嘀影视展示页(www.52bdys.com), argument={SW_21}
+http-response https?:\/\/.+\.olevod\..+\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=欧乐影视(www.olevod.tv), argument={SW_22}
+http-response https?:\/\/cupfoxapp\.tv(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=茶杯狐(cupfoxapp.tv), argument={SW_23}
+http-response https?:\/\/www\.dmmiku\.com(?!(.*(cdn-cgi|verify|auth|api|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=dmmiku(www.dmmiku.com), argument={SW_24}
+http-response https?:\/\/bf\.bfdm\.xyz(?!(.*(cdn-cgi|verify|auth|api|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=bfdm(bf.bfdm.xyz), argument={SW_25}
+http-response https?:\/\/.*duboku.*\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=独播库(www.duboku.tv), argument={SW_26}
+http-response ^https?:\/\/(www|wap|m)\.tvn\.cc\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=韩剧TV(www.tvn.cc), argument={SW_27}
+http-response ^https?:\/\/(555dy\w{0,3})\.(com|top|shop)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=555电影网(555dy.com), argument={SW_28}
+http-response ^https?:\/\/(www\.|m\.){0,1}libvio\.(top|pro|fun)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=梨播(libvio.top|pro), argument={SW_29}
+http-response ^https?:\/\/(www.ttsp.tv)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=天天视频(www.ttsp.tv), argument={SW_30}
+http-response ^https?:\/\/(hitomi.la)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=工口漫画(hitomi.la), argument={SW_31}
+http-response ^https?:\/\/(www.ntdm9.com)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=NT动漫(www.ntdm9.com), argument={SW_32}
+http-response ^https?:\/\/(www.novel543.com)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=稷下書院(www.novel543.com), argument={SW_33}
+http-response ^https?:\/\/(m\.diyibanzhu\.me)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=第一版主(m.diyibanzhu.me), argument={SW_34}
+http-response ^https?:\/\/(www\.alicesw\.com)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=爱丽丝书屋(www.alicesw.com), argument={SW_35}
+http-response ^https?:\/\/(www\.hltv\.org)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=hltv(www.hltv.org), argument={SW_36}
+http-response ^https?:\/\/(www|video)\.dmm\.co\.jp\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=DMM(www.dmm.co.jp), argument={SW_37}
+http-response ^https?:\/\/www\.javbus\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Javbus(www.javbus.com), argument={SW_38}
+http-response ^https?:\/\/javdb\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=JavDB(www.javDB.com), argument={SW_39}
+http-response ^https?:\/\/jav\.land\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=jav.land(jav.land), argument={SW_40}
+http-response ^https?:\/\/www\.javlibrary\.com\/(cn|tw|ja|en)\/(\?v\=jav|vl_|search|star|tl_|public|genre) script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Javlibrary(www.Javlibrary.com), argument={SW_41}
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(pornhub)(\.)\w{0,3})\/(?!(.*(authenticate|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Pornhub(cn.pornhub.com), argument={SW_42}
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(t66y)(\.)\w{0,3})\/(?!(.*(authenticate|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=t66y艹榴(t66y.com), argument={SW_43}
+http-response ^https?:\/\/(\w{0,3}(\.){0,1}(xchina)(\.)\w{0,3})\/(?!(.*(authenticate|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=小黄书(xchina.co), argument={SW_44}
+http-response ^https?:\/\/(jable|(en|\w{2,3})\.jable)\.tv\/(?!(.*(\?mode|login|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Jable(en|jable.tv), argument={SW_45}
+http-response ^https?:\/\/missav\.(ws|live|com|ai)\/(?!(.*(api|login|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/Adguard/Adblock4limbo.js, requires-body=true, tag=Missav(missav.com), argument={SW_46}
+http-response ^https?:\/\/bi-girl\.(net|ws|com|ai)\/(?!(.*(api|login|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=bi-girl(bi-girl.net), argument={SW_47}
+http-response ^https?:\/\/op\.(gg)\/(?!(.*(api|login|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff5|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=op.gg(op.gg), argument={SW_48}
+http-response ^https?:\/\/javday\.(tv|app)\/(?!(.*(api|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Javday(javday.tv|javday.app), argument={SW_49}
+http-response ^https?:\/\/www\.xvideos\.com\/(?!(.*(api|my|cdn-cgi|verify|auth|captch|account|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Xvideos(www.xvideos.com), argument={SW_50}
+http-response ^https?:\/\/njav\.tv\/(?!(.*(api|my|cdn-cgi|verify|auth|captch|account|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=njav(njav.com), argument={SW_51}
+http-response ^https?:\/\/(netflav|netflav5)\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Netflav(netflav|netflav5|.com), argument={SW_52}
+http-response ^https?:\/\/(turbovidhls\.com|fc2stream\.tv)\/(?!(.*(api|my|cdn-cgi|verify|auth|captch|account|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=turbovidhls(turbovidhls.com), argument={SW_53}
+http-response ^https?:\/\/(lk1\.supremejav\.com|trailerhg\.xyz|turboplayers\.xyz|javggvideo\.xyz|turtleviplay\.xyz|findjav\.com|stbturbo\.xyz|emturbovid\.com|streamtape\.com|javplayer|((mmsw02|mmfl04|netflavns1|netflavns2|emturbovid|filemoon|embedrise|mmfl02|embedgram)\.(sx|com))|filemoon\.sx|embedrise\.com|mmfl02\.com|embedgram\.com|fviplions\.com|sfastwish\.com|cabecabean\.lol|belegug\.online|wishfast\.top|vidmoviesb\.xyz|vhmovies\.to|awish\.pro|ankrzkz\.sbs|sub123\.xyz|leakslove\.net|mwish\.pro|embedwish\.com|javhahaha\.us|abkrzkz\.sbs|streamvid\.top|abkrzkr\.sbs|playertv\.net|sbrity\.com|doodporn\.xyz|mycloud123\.top|streamsb\.click|streamxxx\.online|trafficdepot\.re|sblona\.com|filelions\..*|ahvsh\.com|sbrapid\.com|streaamss\.com|louishide\.com|projectfreetv\.lol|streamwish\.to|lvturbo\.com|javb1\.com|sbface\.com|rbtstream\.info|vidgo\.top|sbhight\.com|sbbrisk\.com|streamhide\.to|cloudrls\.com|mm9846\.com|m4uhd\.club|streamm4u\.club|sbchill\.com|fbjav\.com|imfb\.xyz|sbrulz\.xyz|baldrfilms\.xyz|javbigo\.xyz|dizivap\..*|dvapizle\..*|sblongvu\.com|mavavid\.com|fembed9hd\.com|xsub\.cc|sbthe\.com|sbanh\.com|mm9844\..*|anigogo\.net|faptiti\.com|javsubbed\.xyz|sblanh\.com|av4asia\.com|playerjavseen\.com|pornhubed\.com|xvideostream\.net|streamsss\.net|sbspeed\.com|vcdn-stream\.xyz|vanfem\.com|javuncen\.xyz|vidplay\.ch|javenglish\.me|ssbstream\.net|zojav\.com|watch-jav-english\.live|javpornhd\.online|yuamikami\.xyz|embed-media\.com|obaplayer\.xyz|cdn-myhdjav\.info|dlmovies\.link|cinegrabber\.com|watchjavnow\.xyz|luxubu\.review|nsfwzone\.xyz|viplayer\.cc|cinemaemcasa\.xyz|sbfast\.com|iframe2videos\.xyz|javfu\.net|streamas\.cloud|nashstream\.top|yuistream\.xyz|jav247\.top|viewsb\.com|myvideoplayer\.monster|cloudemb\.com|moviesland\.xyz|jvembed\.com|ffem\.club|javleaked\.com|pornhole\.club|ndrama\.xyz|fembed-hd\.com|netflav\.com|netflav5\.com|mambast\.tk|cutl\.xyz|playerjavhd\.com|mycloudzz\.com|suzihaza\.com|embedsb\.com|layarkacaxxi\.icu|nekolink\.site|sbflix\.xyz|javhdfree\.icu|streamsb\.net|rubicstreaming\.com|javside\.com|gdstream\.net|animepl\.xyz|watchsb\.com|sbplay2\..*|hentai4\.me|playersb\.com|streamabc\.xyz|ns21\.online|diasfem\.com|milfnut\.net|pelispop\.net|ondembed\.xyz|tubesb\.com|fplayer\.info|mm9842\.com|sbplay1\.com|javmvp\.com|japopav\.tv|nezuko-ah\.nl|pelistop\.co|vidcloud\..*|mavlecteur\.com|xxxjaa\.xyz|vcdn2\.space|mavplayer\.xyz|sbplay\..*|sbvideo\.net|sbembed4\.com|javcl\.me|dfmagazine\.co\.uk|down-paradise\.com|embedsito\.com|serverf4\.org)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=PlayerAds, argument={SW_54}
+http-response ^https?:\/\/\w{0,10}(\.){0,1}btc760\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=t1229.btc760.com(t1229.btc760.com), argument={SW_55}
+http-response ^https?:\/\/\w{0,3}(\.){0}(d1skbu98kuldnf|dnt92ffcqr0xu)\.cloudfront\.net\/(?!(.*(cdn-cgi|verify|api|auth\/|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=mdsp(dnt92ffcqr0xu|d1skbu98kuldnf.cloudfront.net), argument={SW_56}
+http-response ^https?:\/\/\w{0,3}(\.){0}91porny\.com\/(?!(.*(cdn-cgi|verify|auth\/|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=91porny(91porny.com), argument={SW_57}
+http-response ^https?:\/\/\w{0,3}(\.){0,1}91porna\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=91porna(91porna.com), argument={SW_58}
+http-response ^https?:\/\/\w{0,3}(\.){0,1}91porn\.com\/(?!(.*(get_image|slider_verify|cdn-cgi|register|cookie|captcha|evercookie|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=91porn(www.91porn.com), argument={SW_59}
+http-response ^https?:\/\/(cn1|www)\.(91short\.com)\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=91short(cn1.91short.com), argument={SW_60}
+http-response ^https?:\/\/avple\.tv\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Avple(avple.tv), argument={SW_61}
+http-response ^https?:\/\/(\w{0,3})(\.{0,1})4hu\.tv\/(?!(.*(cdn-cgi|verify|auth|captch|onclick|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=4hu(4hu.tv), argument={SW_62}
+http-response ^https?:\/\/supjav\.com\/(?!(.*(cdn-cgi|verify|auth|captch|api|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Supjav(supjav.com), argument={SW_63}
+http-response ^http?:\/\/www\.tz659\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=tz659(www.tz659.com), argument={SW_64}
+http-response ^https?:\/\/anime1\.me\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=anime1(anime1.me), argument={SW_65}
+http-response ^https?:\/\/hanime1\.me\/(?!(.*(api|cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=hanime1(hanime1.me), argument={SW_66}
+http-response ^https?:\/\/m\.yhpdm\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=yhdmp(m.yhdmp.com), argument={SW_67}
+http-response ^https?:\/\/\w{3,5}\.javmost\.com\/(?!(.*(cdn-cgi|verify|auth|captch|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=Javmost(javmost.xyz), argument={SW_68}
+http-response ^https?:\/\/(www.tameikegoro.jp|tameikegoro.jp|www.madonna-av.com|madonna-av.com|deeps.net|www.fitch-av.com|fitch-av.com|www.takara-tv.jp|takara-tv.jp|www.moodyz.com|moodyz.com|www.s1s1s1.com|s1s1s1.com|www.prestige-av.com|prestige-av.com|www.sod.co.jp|sod.co.jp|venus-av.com|www.gloryquest.tv|gloryquest.tv|www.premium-beauty.com|premium-beauty.com|www.nagae-style.com|nagae-style.com|www.ideapocket.com|ideapocket.com|www.attackers.net|attackers.net|www.dasdas.jp|dasdas.jp|www.oppai-av.com|oppai-av.com|www.kawaiikawaii.jp|kawaiikawaii.jp|www.to-satsu.com|to-satsu.com|www.wanz-factory.com|wanz-factory.com|www.av-e-body.com|av-e-body.com|www.mgstage.com|mgstage.com|www.mousouzoku-av.com|mousouzoku-av.com|manji-group.com|www.rocket-inc.net|rocket-inc.net|www.dmm.co.jp|dmm.co.jp|www.muku.tv|muku.tv)\/(?!(.*(api|my|cdn-cgi|verify|auth|captch|account|(\.(js|css|jpg|jpeg|png|webp|gif|zip|woff|woff2|m3u8|mp4|mov|m4v|avi|mkv|flv|rmvb|wmv|rm|asf|asx|mp3|json|ico|otf|ttf))))).* script-path=https://limbopro.com/Adguard/Adblock4limbo.js, requires-body=true, tag=AVfactory, argument={SW_69}
+
+[MITM]
+hostname = %APPEND% *.cnn.com, www.federalreserve.gov, manthanguptaa.in, alma.now, www.nasa.gov, m.diyibanzhu.me, jable.tv, nnhanman.xyz, e-hentai.org, xhamster.com, www.simply-hentai.com, aabook.xyz, tw.xchina.co, cn.pornhub.com, hentaifox.com, hentaiera.com, neal.fun, stackoverflow.com, javtiful.com, m.iyf.tv, playa.huaren.live, m.imdb.com, www.rottentomatoes.com, www.shibashuwu.net, m.111bz.cc, ai.cmu.edu, www.cmu.edu, www.stanford.edu, magazine.itabelog.blog, m.uvod.tv, huavod.top, m.yfsp.tv, time.com, www.theverge.com, www.producthunt.com, www.wired.com, techmeme.com, thehackernews.com, *.ycombinator.com, www.ycombinator.com, blog.google, www.artificialintelligence-news.com, www.cbsnews.com, *.mit.edu, routinehub.co, techcrunch.com, www.reuters.com, english.cw.com.tw, www.taipeitimes.com, www.goodnewsnetwork.org, www.theguardian.com, www.nytimes.com, www.usatoday.com, www.npr.org, www.cnn10.com, learningenglish.voanews.com, webtv.un.org, www.un.org, breakingnewsenglish.com, blog.samaltman.com, cdn.openai.com, gimy.com.tw, openai.com, www.bbc.co.uk, z-library.*, *.bloomberg.com, *.dmm.co.jp, www.reddit.com, *.ted.com, www.bbc.com, lk1.supremejav.com,turbovidhls.com,trailerhg.xyz,turboplayers.xyz,javggvideo.xyz,turtleviplay.xyz,findjav.com,stbturbo.xyz,emturbovid.com, www.google.com, www.google.com.hk, dnt92ffcqr0xu.cloudfront.net, d1skbu98kuldnf.cloudfront.net, 91porny.com, video.dmm.co.jp, www.dmm.co.jp, playa.huaren.live, play.huaren.live, huaren.live, op.gg, bi-girl.net, bf.bfdm.xyz, www.dmmiku.com, -www.colamanga.com, -colamanga.com, cupfoxapp.tv, jav.land, www.52bdys.com, api.iyf.tv, m.iyf.tv, iyf.tv, joyous-battle.com, javplayer.me, www.iyf.tv, js.wpadmngr.com, hitomi.la, www.hltv.org, *.cdn77.org, www.alicesw.com, m.diyibanzhu.me, 91porna.com, cdn.holmesmind.com, *.gliacloud.com, adc.tamedia.com.tw, www.novel543.com, stat.gn01.top, ra7.xyz, a.magsrv.com, poweredby.jads.co, cdn.tsyndicate.com, mc.yandex.ru, rouman5.com, rou.video, mc.yandex.ru, cnys.tv, xiaoxintv.net, www.ntdm9.com, www.olevod.tv, www.tameikegoro.jp,tameikegoro.jp,www.madonna-av.com,madonna-av.com,deeps.net,www.fitch-av.com,fitch-av.com,www.takara-tv.jp,takara-tv.jp,www.moodyz.com,moodyz.com,www.s1s1s1.com,s1s1s1.com,www.prestige-av.com,prestige-av.com,www.sod.co.jp,sod.co.jp,venus-av.com,www.gloryquest.tv,gloryquest.tv,www.premium-beauty.com,premium-beauty.com,www.nagae-style.com,nagae-style.com,www.ideapocket.com,ideapocket.com,www.attackers.net,attackers.net,www.dasdas.jp,dasdas.jp,www.oppai-av.com,oppai-av.com,www.kawaiikawaii.jp,kawaiikawaii.jp,www.to-satsu.com,to-satsu.com,www.wanz-factory.com,wanz-factory.com,www.av-e-body.com,av-e-body.com,www.mgstage.com,mgstage.com,www.mousouzoku-av.com,mousouzoku-av.com,manji-group.com,www.rocket-inc.net,rocket-inc.net,www.dmm.com,dmm.co.jp,www.muku.tv,muku.tv,streamtape.com, fviplions.com,sfastwish.com,cabecabean.lol,belegug.online,wishfast.top,vidmoviesb.xyz,vhmovies.to,awish.pro,ankrzkz.sbs,fc2stream.tv,sub123.xyz,leakslove.net,mwish.pro,embedwish.com,javhahaha.us,abkrzkz.sbs,streamvid.top,abkrzkr.sbs,playertv.net,sbrity.com,doodporn.xyz,mycloud123.top,streamsb.click,streamxxx.online,trafficdepot.re,sblona.com,filelions.*,ahvsh.com,sbrapid.com,streaamss.com,louishide.com,projectfreetv.lol,streamwish.to,lvturbo.com,javb1.com,sbface.com,rbtstream.info,vidgo.top,sbhight.com,sbbrisk.com,streamhide.to,cloudrls.com,mm9846.com,m4uhd.club,streamm4u.club,sbchill.com,fbjav.com,imfb.xyz,sbrulz.xyz,baldrfilms.xyz,javbigo.xyz,dizivap.*,dvapizle.*,sblongvu.com,mavavid.com,fembed9hd.com,xsub.cc,sbthe.com,sbanh.com,mm9844.*,anigogo.net,faptiti.com,javsubbed.xyz,sblanh.com,av4asia.com,playerjavseen.com,pornhubed.com,xvideostream.net,streamsss.net,sbspeed.com,vcdn-stream.xyz,vanfem.com,javuncen.xyz,vidplay.ch,javenglish.me,ssbstream.net,zojav.com,watch-jav-english.live,javpornhd.online,yuamikami.xyz,embed-media.com,obaplayer.xyz,cdn-myhdjav.info,dlmovies.link,cinegrabber.com,watchjavnow.xyz,luxubu.review,nsfwzone.xyz,viplayer.cc,cinemaemcasa.xyz,sbfast.com,iframe2videos.xyz,javfu.net,streamas.cloud,nashstream.top,yuistream.xyz,jav247.top,viewsb.com,myvideoplayer.monster,cloudemb.com,moviesland.xyz,jvembed.com,ffem.club,javleaked.com,pornhole.club,ndrama.xyz,fembed-hd.com,netflav.com,netflav5.com,mambast.tk,cutl.xyz,playerjavhd.com,mycloudzz.com,suzihaza.com,embedsb.com,layarkacaxxi.icu,nekolink.site,sbflix.xyz,javhdfree.icu,streamsb.net,rubicstreaming.com,javside.com,gdstream.net,animepl.xyz,watchsb.com,sbplay2.*,hentai4.me,playersb.com,streamabc.xyz,ns21.online,diasfem.com,milfnut.net,pelispop.net,ondembed.xyz,tubesb.com,fplayer.info,mm9842.com,sbplay1.com,javmvp.com,japopav.tv,nezuko-ah.nl,pelistop.co,vidcloud.*,mavlecteur.com,xxxjaa.xyz,vcdn2.space,mavplayer.xyz,sbplay.*,sbvideo.net,sbembed4.com,javcl.me,dfmagazine.co.uk,down-paradise.com,embedsito.com,serverf4.org,streamwish.com,mmsw02.com,mmfl04.com,netflavns1.com,netflavns2.com,emturbovid.com, static.adxadserv.com, ak.oneegrou.net, goesdeedinsensitive.com, help.fanza.cc, a.realsrv.com, creative.xlivrdr.com, www.javlibrary.com, njav.tv, hanime1.me, 555dy.shop, 555dyx5.com, 555dyx4.com, 555dyx3.com, 555dyx1.com, supjav.com, embedgram.com, mmfl02.com, embedrise.com, filemoon.sx, static-cdn77.xvideos-cdn.com, www.xvideos.com, javday.*, javday.app,javday.tv, xiaoxintv.net, xiaoxintv.com, xiaobaotv.com, xiaobaotv.net, cn1.91short.com, vthumb.killcovid2021.com, img.killcovid2021.com, m.nivod5.com, www.nivod5.com, api.nivodz.com, m.nivod4.tv, m.nivod8.tv, m.nivod9.tv, m.nivod*.tv, www.nivod8.tv, www.nivod*.tv, www.nivod9.tv, www.nivod4.tv, m.yhpdm.com, m.yhdmp.cc, m.yhdmp.com, anime1.me, www.tz659.com, www.ttsp.tv, *.cloudfront.net, www.o8tv.com, www.555dd*.com, www.5dy*, *.tvn.cc, manhuapica.com, www.wnacg.com, www.wnacg.org, suzihaza.com, t1229.btc760.com, *.btc760.com, www.91porn.com,91porn.com, netflav.com, netflav5.com, www.javmost.xyz, javmost.xyz, www5.javmost.xyz, www5.javmost.com, cn.bing.com, www.bing.com, zhuanlan.zhihu.com, www.zhihu.com, *.jable.tv, en.jable.tv, jable.tv, wwww.tvn.cc, m.tvn.cc, wap.tvn.cc, ddrk.me, ddys.pro, ddys.tv, ddys.art, ddys2.me, 18comic.org, 18comic.vip, xchina.co,t66y.com,www.pornhub.com, cn.pornhub.com, missav.live, missav.ws, missav.ai, missav.com, www.libvio.top, www.libvio.fun, www.libvio.pro, www.libvio.com, www.libvio.la, 4hu.tv,*.4hu.*, gimy.ai, gimy.tv, *.duboku.*, assert.avple.tv, avple.tv, *.btbdys.*, www.bdys01.com, www.bdys02.com, www.bdys03.com, www.bdys10.com, www.javdb.com, javdb.com, *.javbus.*, www.baidu.com, m.baidu.com, zhidao.baidu.com
