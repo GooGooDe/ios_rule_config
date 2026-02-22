@@ -2,7 +2,8 @@
 #!desc=1.新增页面右下角导航；2.支持为每个特定网站独立控制去广告脚本的开启与关闭。
 #!author=limbopro
 #!homepage=https://limbopro.com/archives/12904.html
-#!icon=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Icon/Adblock4limbo.png
+##!icon=https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Icon/Adblock4limbo.png
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/others/18Plus.png
 
 [Argument]
 # =================独立开关设置=================
