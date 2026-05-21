@@ -10,7 +10,8 @@
 
 [Rewrite]
 # Rejects
-^https?:\/\/(www\.zhihu\.com|(103\.41\.167\.(226|234|235|236)))\/api\/v4\/answers\/\d+\/recommendations reject-drop
+# 屏蔽知乎回答推荐接口
+^https?:\/\/(www\.zhihu\.com|103\.41\.167\.(226|234|235|236))\/api\/v4\/answers\/\d+\/recommendations - reject
 
 [Script]
 http-response ^https:\/\/www\.zhihu\.com/api/v4/answers/\d+/recommendations script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/zhihu_recommendations_ad.js, requires-body=true, max-size=-1, tag=知乎推荐去广告
