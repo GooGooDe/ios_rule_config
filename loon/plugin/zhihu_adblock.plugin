@@ -1,0 +1,15 @@
+#!name=知乎去广告插件
+#!desc=去除知乎推荐接口中的广告数据
+#!date=2026-05-20
+#!openUrl= https://github.com/GooGooDe/ios_rule_config
+#!author= GooGooDe
+#!homepage= https://github.com/GooGooDe/ios_rule_config
+#!system_version = 15
+#!loon_version = 3.2.1(372)
+#!tag = 去广告
+
+[Script]
+http-response ^https:\/\/www\.zhihu\.com/api/v4/answers/\d+/recommendations script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/zhihu_recommendations_ad.js, requires-body=true, max-size=-1, tag=知乎推荐去广告
+
+[MITM]
+hostname = www.zhihu.com
