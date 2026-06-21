@@ -1,5 +1,5 @@
 #!name=高德地图去广告
-#!desc=过滤高德地图 Amap(com.autonavi.minimap) 中的开屏广告、首页 banner、信息流、搜索推广、打车推广及我的页面推广位
+#!desc=过滤高德地图 Amap(com.autonavi.minimap) 中的开屏广告、首页 banner、信息流、搜索推广、打车推广及我的页面推广位，支持独立开关控制
 #!date=2026-06-21
 #!author=GooGooDe
 #!homepage= https://github.com/GooGooDe/ios_rule_config
@@ -7,37 +7,54 @@
 #!loon_version = 3.2.1(372)
 #!tag = 去广告
 
+[Argument]
+# ========== 独立开关 ==========
+# 开启/关闭 开屏/启动页广告拦截（reject + 脚本过滤）
+switch_splash = switch,true,tag=开屏/启动页广告,desc=拦截 splash、launch、startup 等开屏/启动页广告接口（reject）并过滤相关响应字段
+
+# 开启/关闭 首页/信息流/banner 广告拦截
+switch_home = switch,true,tag=首页/信息流/Banner广告,desc=拦截首页 banner、信息流、运营位、浮窗等广告（reject）并过滤相关响应字段
+
+# 开启/关闭 搜索/周边推荐广告拦截
+switch_search = switch,true,tag=搜索/周边推荐广告,desc=拦截搜索结果推广、POI 推广、周边推荐广告（reject）并过滤相关响应字段
+
+# 开启/关闭 打车/出行广告拦截
+switch_ride = switch,true,tag=打车/出行推广广告,desc=拦截打车、驾车、公共交通等出行场景的推广广告（reject）并过滤相关响应字段
+
+# 开启/关闭 我的页面推广广告拦截
+switch_mine = switch,true,tag=我的页面推广广告,desc=拦截"我的"页面中的会员推广、积分商城、权益广告等（reject）并过滤相关响应字段
+
+# 开启/关闭 第三方广告 SDK 拦截（pangle、gdt、alimama 等）
+switch_3rd = switch,true,tag=第三方广告SDK拦截,desc=拦截第三方广告 SDK 请求（pangle、gdt、alimama、mmstat 等域名 reject-img）
+
 [Rewrite]
-# === 1. 明确广告接口 —— 直接拒绝 ===
+# === 1. 明确广告接口（受 switch_splash 控制）===
 # 开屏 / 启动页接口
-^https?:\/\/.*\/(splash|launch|startup|splash_ad|splash-ad|ad_info|ad_pop|popups) reject-drop
-# 常见广告路径（按路径关键词拦截
-^https?:\/\/.*\/(ad|ads|cpc|banner|marketing|promotion|operation|float|pop|popups|recommend|topbanner|top_banner|float_ad|pop_ad)\/ reject-drop
-^https?:\/\/.*\?(.*&)?(action|ad|cpc|banner|splash|promotion|operation)= reject-drop
+^https?:\/\/.*\/(splash|launch|startup|splash_ad|splash-ad|ad_info|ad_pop|popups) reject-drop,enable={switch_splash}
+# 常见广告路径（按路径关键词拦截）
+^https?:\/\/.*\/(ad|ads|cpc|banner|marketing|promotion|operation|float|pop|popups|recommend|topbanner|top_banner|float_ad|pop_ad)\/ reject-drop,enable={switch_splash}
+^https?:\/\/.*\?(.*&)?(action|ad|cpc|banner|splash|promotion|operation)= reject-drop,enable={switch_splash}
 
-# 第三方广告 SDK / 推广域名（按域名包含广告关键词直接拒绝）
-^https?:\/\/(.*\.)?(pangle|bytedance|zijinshan|adscope|gdt\.qq|e\.qq|kuaishouzt|ksapis|miaozhen|youmi|admob|applovin|unityads|ironsource|chartboost|vungle|inmobi|tapjoy|amazon|amplitude|appsfly|adjust|sigmob|tradplus|fancy|medpro|googleads|douyin|amap-ad)\. reject-img
-^https?:\/\/(.*\.)?(alimama|alog|mmstat|tanx|ssp|amap-open|amap-ssp|yunduosdk)\. reject-drop
-
-# === 2. 高德内部广告 API —— 走脚本过滤内容 ===
-# 高德主 API 返回的数据中包含广告字段，需要脚本处理，见 Script 段
+# === 2. 第三方广告 SDK（受 switch_3rd 控制）===
+^https?:\/\/(.*\.)?(pangle|bytedance|zijinshan|adscope|gdt\.qq|e\.qq|kuaishouzt|ksapis|miaozhen|youmi|admob|applovin|unityads|ironsource|chartboost|vungle|inmobi|tapjoy|amazon|amplitude|appsfly|adjust|sigmob|tradplus|fancy|medpro|googleads|douyin|amap-ad)\. reject-img,enable={switch_3rd}
+^https?:\/\/(.*\.)?(alimama|alog|mmstat|tanx|ssp|amap-open|amap-ssp|yunduosdk)\. reject-drop,enable={switch_3rd}
 
 [Rule]
-# 第三方广告 SDK / 推广位域名
-URL-REGEX,^https?:\/\/(.*\.)?(pangle|bytedance|zijinshan|adscope|gdt\.qq|e\.qq|kuaishouzt|ksapis|miaozhen|youmi|admob|applovin|ironsource|chartboost|vungle|inmobi|tapjoy|amazon|amplitude|app|appfly|adjust|sigmob|tradplus|medpro|googleads|douyin|amap-ad|alimama|alog|mmstat|tanx|ssp|amap-open|amap-ssp|yunduosdk)\.,REJECT-DROP
-# 典型广告路径
-URL-REGEX,^https?:\/\/.*\/(splash|launch|ad|cpc|banner|pop|popups|ad_pop|splash_ad|splash-ad|marketing|promotion|operation|recommend)[/\?],REJECT-DROP
+# 第三方广告 SDK / 推广位域名（受 switch_3rd 控制）
+URL-REGEX,^https?:\/\/(.*\.)?(pangle|bytedance|zijinshan|adscope|gdt\.qq|e\.qq|kuaishouzt|ksapis|miaozhen|youmi|admob|applovin|ironsource|chartboost|vungle|inmobi|tapjoy|amazon|amplitude|app|appfly|adjust|sigmob|tradplus|medpro|googleads|douyin|amap-ad|alimama|alog|mmstat|tanx|ssp|amap-open|amap-ssp|yunduosdk)\.,REJECT-DROP,enable={switch_3rd}
+# 典型广告路径（受对应开关控制）
+URL-REGEX,^https?:\/\/.*\/(splash|launch|ad|cpc|banner|pop|popups|ad_pop|splash_ad|splash-ad|marketing|promotion|operation|recommend)[/\?],REJECT-DROP,enable={switch_splash}
 
 [Script]
-# === 3. 脚本过滤 —— 对高德 API 返回 JSON 中的广告字段递归清理
-# 开屏 / 启动页接口
-http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(splash|launch|startup|ad|cpc|banner|marketing|promotion|operation|recommend) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_开屏推广
-# 首页 / 信息流 / 搜索 / 周边
-http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(home|index|search|poi|around|nearby|feeds|operation|marketing|topbanner|top_banner|float_ad|pop_ad) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_首页信息流
-# 打车 / 出行 / 我的 页面
-http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(ride|taxi|travel|driving|mine|profile|user|me|personal) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_打车出行我的
-# 地图 / 位置 / 通用 API（兜底，覆盖更多返回广告的接口）
-http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode|amapopen|lbs|amapinfo|amap-ad)\.com script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_通用API
+# === 3. 脚本过滤 —— 对高德 API 返回 JSON 中的广告字段递归清理 ===
+# 开屏 / 启动页接口（受 switch_splash 控制）
+http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(splash|launch|startup|ad|cpc|banner|marketing|promotion|operation|recommend) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_开屏推广,argument=[{switch_splash}],enable={switch_splash}
+# 首页 / 信息流 / 搜索 / 周边（受 switch_home + switch_search 控制）
+http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(home|index|search|poi|around|nearby|feeds|operation|marketing|topbanner|top_banner|float_ad|pop_ad) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_首页信息流,argument=[{switch_home},{switch_search}],enable={switch_home}
+# 打车 / 出行 / 我的 页面（受 switch_ride + switch_mine 控制）
+http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/.*(ride|taxi|travel|driving|mine|profile|user|me|personal) script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_打车出行我的,argument=[{switch_ride},{switch_mine}],enable={switch_ride}
+# 地图 / 位置 / 通用 API（兜底，受所有开关影响）
+http-response ^https?:\/\/(.*\.)?(amap|autonavi|gaode|amapopen|lbs|amapinfo|amap-ad)\.com script-path=https://raw.githubusercontent.com/GooGooDe/ios_rule_config/master/loon/plugin/scripts/amap_remove_ads.js, requires-body=true, max-size=-1, tag=高德去广告_通用API,argument=[{switch_splash},{switch_home},{switch_search},{switch_ride},{switch_mine}]
 
 [MITM]
 hostname = *.amap.com, *.autonavi.com, *.gaode.com, *.amap.cn, *.amapopen.com, *.amapinfo.com, *.amap-ad.com, *.mobad.com, *.adinfo.com, pangle.com, *.pangle.*, gdt.qq.com, *.gdt.qq.com, e.qq.com, *.e.qq.com, *.bytedance.com, *.zijinshan.com, *.miaozhen.com, *.ksapis.com, *.kuaishouzt.com, *.alipay.com, *.alog.umeng.com, *.youmi.net
