@@ -2,10 +2,10 @@
 #!desc=过滤高德地图 Amap(com.autonavi.minimap) 中的开屏广告、首页 banner、信息流、搜索推广、打车推广及我的页面推广位，支持独立开关控制
 #!date=2026-06-21
 #!author=GooGooDe
-#!homepage= https://github.com/GooGooDe/ios_rule_config
-#!system_version = 15
-#!loon_version = 3.2.1(372)
-#!tag = 去广告
+#!homepage=https://github.com/GooGooDe/ios_rule_config
+#!system_version=15
+#!loon_version=3.2.1(372)
+#!tag=去广告
 
 [Argument]
 # ========== 独立开关 ==========
@@ -44,6 +44,8 @@ switch_3rd = switch,true,tag=第三方广告SDK拦截,desc=拦截第三方广告
 URL-REGEX,^https?:\/\/(.*\.)?(pangle|bytedance|zijinshan|adscope|gdt\.qq|e\.qq|kuaishouzt|ksapis|miaozhen|youmi|admob|applovin|ironsource|chartboost|vungle|inmobi|tapjoy|amazon|amplitude|app|appfly|adjust|sigmob|tradplus|medpro|googleads|douyin|amap-ad|alimama|alog|mmstat|tanx|ssp|amap-open|amap-ssp|yunduosdk)\.,REJECT-DROP,enable={switch_3rd}
 # 典型广告路径（受对应开关控制）
 URL-REGEX,^https?:\/\/.*\/(splash|launch|ad|cpc|banner|pop|popups|ad_pop|splash_ad|splash-ad|marketing|promotion|operation|recommend)[/\?],REJECT-DROP,enable={switch_splash}
+# 高德活动/任务/签到接口（按参数前 URL 路径匹配）：ws/aos/activity/bus/sign/task?...
+URL-REGEX,^https?:\/\/(.*\.)?(amap|autonavi|gaode)\.com\/ws\/aos\/activity\/bus\/sign\/task,REJECT-DROP,enable={switch_ride}
 
 [Script]
 # === 3. 脚本过滤 —— 对高德 API 返回 JSON 中的广告字段递归清理 ===
